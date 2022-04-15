@@ -1,6 +1,6 @@
 import express from "express";
 import auth from "./services/Auth.js";
-import router from "./server/routes/greetApi.js";
+import router from "./server/routes/chatApi.js";
 import mongoose from "mongoose";
 // import dotenv from "dotenv";
 import User from "./server/modules/User.js";

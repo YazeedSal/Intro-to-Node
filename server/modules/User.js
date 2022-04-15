@@ -1,3 +1,4 @@
+import { type } from "express/lib/response";
 import mongoose from "mongoose";
 const Schema = mongoose.Schema
 const userSchema = new Schema({
@@ -7,6 +8,7 @@ const userSchema = new Schema({
     isLoggedIn: Boolean,
     lastLogIn: Number,
     password: String,
+    // friends:[{type: Schema.}]
 })
 
 const User = mongoose.model('user',userSchema)
